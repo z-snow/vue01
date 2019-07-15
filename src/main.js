@@ -14,9 +14,14 @@ import './assets/css/gloable.css'
 import axios from 'axios'
 // 配置请求的跟路径
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
+// 有权限的数据的请求拦截，后端要求在请求头里面添加字段Authorization
+axios.interceptors.request.use(function(config) { 
+    config.headers.Authorization = sessionStorage.getItem('token')
+    // console.log(config);
+     return config; //必须使用return 
+    })
+
 Vue.prototype.$http = axios
-
-
 
 new Vue({
     router,
