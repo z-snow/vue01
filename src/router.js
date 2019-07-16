@@ -5,7 +5,8 @@ import login from './components/login.vue'
 import home from './components/home.vue'
 import welcome from './components/welcome.vue'
 import user from './components/users/user.vue'
-
+import rights from './components/power/rights.vue'
+import roles from './components/power/roles.vue'
 Vue.use(Router)
 const router = new Router({
   // 配置登录的路径
@@ -23,7 +24,10 @@ const router = new Router({
       redirect:'/welcome',
       children:[
         {path:'/welcome',component:welcome},
-        {path:'/users',component:user}
+        {path:'/users',component:user},
+        {path:'/rights',component:rights},
+        {path:'/roles',component:roles}
+
       ]
     }
 
