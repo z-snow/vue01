@@ -9,6 +9,11 @@ import './assets/fonts/iconfont.css'
 Vue.config.productionTip = false
     // 导入全局样式表
 import './assets/css/gloable.css'
+// 导入vue-table-with-gird插件
+import TreeTable from 'vue-table-with-tree-grid'
+// 注册组件TreeTable
+Vue.component('tree-table',TreeTable)
+
 
 // 导入注册全局的axios,将axios挂载到全局，每个组件都可以使用this.$http访问axios
 import axios from 'axios'

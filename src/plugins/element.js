@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { Button, Form, FormItem, Input, Message,Container, Header, Aside, Main, Menu, Submenu, MenuItem, MenuItemGroup, Breadcrumb, BreadcrumbItem, Card, Row, Col, Table, TableColumn,Switch,Tooltip,Pagination ,Dialog, MessageBox, Tag, Tree, Option,Select} from 'element-ui'
+import { Button, Form, FormItem, Input, Message,Container, Header, Aside, Main, Menu, Submenu, MenuItem, MenuItemGroup, Breadcrumb, BreadcrumbItem, Card, Row, Col, Table, TableColumn,Switch,Tooltip,Pagination ,Dialog, MessageBox, Tag, Tree, Option,Select, Cascader,Alert,Tabs, TabPane} from 'element-ui'
 
 Vue.use(Button)
 Vue.use(Form)
@@ -28,7 +28,10 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Option)
 Vue.use(Select)
-
+Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
 
 Vue.prototype.$message = Message //element中的message组件需要全局挂载
 Vue.prototype.$confirm = MessageBox.confirm; //弹出确认框需要全局挂载

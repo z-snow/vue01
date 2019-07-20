@@ -8,7 +8,7 @@ import user from './components/users/user.vue'
 import rights from './components/power/rights.vue'
 import roles from './components/power/roles.vue'
 import cate from './components/goods/cate.vue'
-
+import params from './components/goods/params.vue'
 Vue.use(Router)
 const router = new Router({
   // 配置登录的路径
@@ -29,8 +29,8 @@ const router = new Router({
         {path:'/users',component:user},
         {path:'/rights',component:rights},
         {path:'/roles',component:roles},
-        {path:'/categories',component:cate}
-
+        {path:'/categories',component:cate},
+        {path:'/params',component:params}
       ]
     }
 
