@@ -9,7 +9,7 @@
         <!-- 卡片区域 -->
          <el-card>
              <el-button type="primary">添加角色</el-button>
-              <el-table :data="rolesList" stripe border>
+              <el-table :data="rolesList" stripe border row-key="id">
                 <el-table-column type="expand">
                      <template v-slot='scope'>
                         <el-row  :key='item1.id' :class="[ i1 === 0 ? 'topBorder': '' ,'botBorder','vcenter']" v-for="(item1,i1) in scope.row.children">                        
