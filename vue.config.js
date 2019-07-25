@@ -12,6 +12,7 @@ module.exports = {
                 return args
             })
 
+// 生产模式需要将这些外部文件取出来，不需要打包，在index.html中使用cdn引入外部文件
             config.set('externals',{
                  vue:'Vue',
                 'vue-router':'VueRouter',
